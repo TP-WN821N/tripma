@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../src/output.css">
+  <title>Tripma</title>
+</head>
+
+<body>
+  <header class="header p-6 sticky">
+    <div class="nav flex justify-between items-center">
+      <a href="../index.html" class="logo">
+        <img src="../img/logo.svg" alt="">
+      </a>
+      <div class="header_right flex items-center gap-4">
+        <ul class="gap-4 hidden min-[650px]:flex">
+          <li class="">
+            <a class="p-[10px] text-[#7C8DB0] text-base hover:text-[#605DEC]" href="./flights.html">Flights</a>
+          </li>
+          <li class="">
+            <a class="p-[10px] text-[#7C8DB0] text-base hover:text-[#605DEC]" href="#">Hotels</a>
+          </li>
+          <li class="">
+            <a class="p-[10px] text-[#7C8DB0] text-base hover:text-[#605DEC]" href="#">Packages</a>
+          </li>
+          <li class="">
+            <a class="p-[10px] text-[#7C8DB0] text-base hover:text-[#605DEC]" href="#">Sign in</a>
+          </li>
+        </ul>
+        <button class="hidden min-[650px]:block text-white rounded bg-[#605DEC] px-5 py-[13px] hover:opacity-80">Sign
+          up</button>
+        <i class="fa-solid min-[650px]:hidden fa-bars text-2xl"></i>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="py-5 px-5 md:py-14 md:px-16">
+      <div>
+        <h2 class=" text-[#605DEC] font-bold pb-4 text-2xl">Passenger information</h2>
+        <p class="text-[#7C8DB0] font-normal text-lg pb-5 md:pb-9 md:w-[80%] lg:w-[60%]">Enter the required information
+          for
+          each traveler and
+          be sure
+          that
+          it exactly matches the government-issued ID
+          presented at the airport.</p>
+        <h3 class="text-[#6E7491] font-semibold text-lg pb-6">Passenger 1 (Adult)</h3>
+      </div>
+      <div class="flex flex-col lg:flex-row lg:gap-[8%]">
+        <div class="lg:w-[46%]">
+          <div
+            class="grid grid-cols-1 gap-2 min-[350px]:grid-cols-2 min-[450px]:gap-y-6 min-[550px]:grid-cols-3 min-[550px]:gap-x-4 md:gap-6">
+            <input
+              class="font-normal text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none min-[350px]:w-full px-2 py-3 w-2/6"
+              type="text" placeholder="First name*">
+            <input
+              class="font-normal text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none min-[350px]:w-full px-2 py-3 w-2/6"
+              type="text" placeholder="Middle">
+            <input
+              class="font-normal text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none min-[350px]:w-full px-2 py-3 w-2/6"
+              type="text" placeholder="Last name*">
+            <input
+              class="font-normal h-fit text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none min-[350px]:w-full px-2 py-3 w-2/6"
+              type="text" placeholder="Suffix">
+            <label class="font-normal text-lg w-full min-[350px]:w-[250px] " for="dateOf">
+              <input
+                class="font-normal text-lg border-solid border-[#A1B0CC] border w-full rounded-[4px] outline-none px-2 py-3"
+                type="text" id="dateOf" placeholder="Date of birth*">
+              <span class="text-xs text-[#7C8DB0] py-0.5 px-1 block">MM/DD/YY</span>
+            </label>
+          </div>
+          <div
+            class="py-6 sm:pb-12 sm:pt-6 grid gap-2 min-[350px]:gap-y-6 grid-cols-1 min-[350px]:grid-cols-2 min-[550px]:gap-x-4 md:gap-6">
+            <input
+              class="font-normal h-fit text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none w-full min-[350px]:w-full px-2 py-3"
+              type="text" placeholder="Email address*">
+            <input
+              class="font-normal h-fit text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none w-full min-[350px]:w-full px-2 py-3"
+              type="text" placeholder="Phone number*">
+            <input
+              class="font-normal h-fit text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none w-full min-[350px]:w-full px-2 py-3"
+              type="text" placeholder="Redress number">
+            <input
+              class="font-normal h-fit text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none w-full min-[350px]:w-full px-2 py-3"
+              type="text" placeholder="Known traveller number*">
+          </div>
+          <div class="grid gap-2 grid-cols-1 col-end-3 pb-6">
+            <h2 class="text-lg font-semibold text-[#6E7491] pb-4 sm:pb-6">Emergency contact information</h2>
+            <label class="flex items-center py-1" for="chackbox">
+              <input id="chackbox" class="w-4 h-4" type="checkbox">
+              <span class="text-lg text-[#6E7491] pl-2">Same as Passenger 1</span>
+            </label>
+          </div>
+          <div
+            class="pb-6 sm:pb-12 sm:pt-6 grid gap-2 min-[350px]:gap-b-6 grid-cols-1 min-[350px]:grid-cols-2 min-[550px]:gap-x-4 md:gap-6">
+            <input
+              class="font-normal h-fit text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none w-full min-[350px]:w-full px-2 py-3"
+              type="text" placeholder="First name*">
+            <input
+              class="font-normal h-fit text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none w-full min-[350px]:w-full px-2 py-3"
+              type="text" placeholder="Last name*">
+            <input
+              class="font-normal h-fit text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none w-full min-[350px]:w-full px-2 py-3"
+              type="text" placeholder="Email address*">
+            <input
+              class="font-normal h-fit text-lg border-solid border-[#A1B0CC] border rounded-[4px] outline-none w-full min-[350px]:w-full px-2 py-3"
+              type="text" placeholder="Last name*">
+          </div>
+          <div>
+            <h2 class="text-lg text-gray-600 font-semibold pb-2.5">Bag information</h2>
+            <p class="text-lg text-gray-400 pb-5 sm:pb-9">Each passenger is allowed one free carry-on bag and one
+              personal item.
+              First checked bag for each
+              passenger is also free. Second bag check fees are waived for loyalty program members. See the <span
+                class="text-[#4c4ca1]">full
+                bag policy.</span>
+            </p>
+            <div class="flex justify-between min-[500px]:w-[450px]">
+              <div>
+                <p class="font-semibold text-lg text-gray-400 pb-3">Passenger 1</p>
+                <h3 class="font-semibold text-lg text-gray-600">First Last</h3>
+              </div>
+              <div>
+                <p class="font-semibold text-lg text-gray-400 pb-3">Checked bags</p>
+                <h3 class="font-semibold flex items-center gap-4 text-lg text-gray-600"><span
+                    class="w-8 h-8 flex items-center justify-center bg-gray-100 text-4xl text-[#52527A] rounded px-2">-</span>
+                  1 <span
+                    class="w-8 h-8 flex items-center justify-center bg-gray-100 text-4xl text-[#52527A] rounded px-2">+</span>
+                </h3>
+              </div>
+            </div>
+            <div class="pt-7 sm:pt-16 flex gap-6 flex-col min-[370px]:flex-row">
+              <button class="text-lg text-[#605DEC] px-5 py-4 rounded-[4px] border border-solid border-[#605DEC]">Save
+                and close</button>
+              <button
+                class="text-lg text-[#7C8DB0] px-5 py-4 rounded-[4px] border border-solid border-[#605DEC] bg-[rgba(203, 212, 230, 0.3)]">Select
+                seats</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class=" pt-16 flex flex-col min-[500px]:w-[430px] md:flex-row md:w-full md:gap-[4%] lg:w-[48%] lg:pt-0 lg:flex-col">
+          <div class="flex flex-col md:w-[60%] lg:w-full">
+            <div class="border border-solid rounded-xl p-4">
+              <div
+                class="p-2 flex flex-col gap-5 min-[470px]:flex-row items-start justify-between border-b border-solid border-[#E9E8FC]">
+                <div class="flex gap-2 items-center">
+                  <img src="./img/hero_avatar.png" class="h-10" alt="">
+                  <div>
+                    <h3 class="text-gray-900 text-lg pb-1">Hawaiian Airlines</h3>
+                    <p class="text-lg text-gray-400">FIG4312</p>
+                  </div>
+                </div>
+                <div class="self-end text-end">
+                  <h3 class="text-gray-900 text-lg pb-1">16h 45m (+1d)</h3>
+                  <h3 class="text-gray-900 text-lg pb-1">7:00 AM - 4:15 PM</h3>
+                  <p class="text-lg text-gray-400">2h 45m in HNL</p>
+                </div>
+              </div>
+              <div class="p-2 flex flex-col gap-5 min-[470px]:flex-row items-start justify-between">
+                <div class="flex gap-2 items-center">
+                  <img src="./img/hero_avatar.png" class="h-10" alt="">
+                  <div>
+                    <h3 class="text-gray-900 text-lg pb-1">Hawaiian Airlines</h3>
+                    <p class="text-lg text-gray-400">FIG4312</p>
+                  </div>
+                </div>
+                <div class="self-end text-end">
+                  <h3 class="text-gray-900 text-lg pb-1">16h 45m (+1d)</h3>
+                  <h3 class="text-gray-900 text-lg pb-1">7:00 AM - 4:15 PM</h3>
+                  <p class="text-lg text-gray-400">2h 45m in HNL</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 flex gap-10 self-end md:w-[46%]">
+              <div class="text-end">
+                <p class="font-semibold text-lg text-gray-900">Subtotal</p>
+                <p class="font-semibold text-lg text-gray-900">Taxes and Fees</p>
+                <p class="font-semibold text-lg text-gray-900">Total</p>
+              </div>
+              <div class="">
+                <p class="font-semibold text-lg text-gray-900">$503</p>
+                <p class="font-semibold text-lg text-gray-900">$121</p>
+                <p class="font-semibold text-lg text-gray-900">$624</p>
+              </div>
+            </div>
+            <button
+              class="self-end px-5 py-2.5 text-lg text-gray-400 bg-[rgba(203, 212, 230, 0.3)] border border-gray-400] rounded mt-4">Select
+              seats</button>
+          </div>
+          <div class="md:w-[36%] lg:w-full">
+            <img class="w-full pt-10" src="../img/chamadon.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class=" ">
+    <div
+      class="flex flex-col items-center text-center min-[500px]:grid-cols-2 min-[500px]:auto-cols-auto min-[500px]:grid min-[500px]:items-start min-[500px]:px-10 min-[500px]:py-6 md:grid-cols-4 md:gap-x-6 lg:grid-cols-5 lg:pt-16">
+      <a href="../index.html"
+        class="flex justify-center py-4 min-[500px]:col-start-1 min-[500px]:justify-start lg:row-start-1">
+        <img src="../img/logo.svg" alt="">
+      </a>
+      <div
+        class="py-4 flex flex-col gap-2 min-[500px]:row-start-2 min-[500px]:text-start min-[500px]:w-fit md:row-start-2 lg:row-start-1">
+        <h3 class="text-lg text-gray-600 font-bold p-1">About</h3>
+        <a class="text-gray-400 " href="#">About Tripma</a>
+        <a class="text-gray-400 " href="#">How it works</a>
+        <a class="text-gray-400 " href="#">Careers</a>
+        <a class="text-gray-400 " href="#">Press</a>
+        <a class="text-gray-400 " href="#">Blog</a>
+        <a class="text-gray-400 " href="#">Forum</a>
+      </div>
+      <div
+        class="py-4 flex flex-col gap-2 min-[500px]:row-start-2 min-[500px]:text-start min-[500px]:w-fit md:row-start-2 lg:row-start-1">
+        <h3 class="text-lg text-gray-600 font-bold p-1">Partner with us</h3>
+        <a class="text-gray-400 " href="#">Partnership programs</a>
+        <a class="text-gray-400 " href="#">Affiliate program</a>
+        <a class="text-gray-400 " href="#">Connectivity partners</a>
+        <a class="text-gray-400 " href="#">Promotions and events</a>
+        <a class="text-gray-400 " href="#">Integrations</a>
+        <a class="text-gray-400 " href="#">Community</a>
+        <a class="text-gray-400 " href="#">Loyalty program</a>
+      </div>
+      <div
+        class="py-4 flex flex-col gap-2 min-[500px]:row-start-3 min-[500px]:text-start min-[500px]:w-fit md:row-start-2 lg:row-start-1">
+        <h3 class="text-lg text-gray-600 font-bold p-1">Support</h3>
+        <a class="text-gray-400 " href="#">Help Center</a>
+        <a class="text-gray-400 " href="#">Contact us</a>
+        <a class="text-gray-400 " href="#">Privacy policy</a>
+        <a class="text-gray-400 " href="#">Terms of service</a>
+        <a class="text-gray-400 " href="#">Trust and safety</a>
+        <a class="text-gray-400 " href="#">Community</a>
+        <a class="text-gray-400 " href="#">Accessibility</a>
+      </div>
+      <div
+        class="py-4 flex flex-col gap-2 min-[500px]:row-start-3 min-[500px]:text-start min-[500px]:w-fit md:row-start-2 lg:row-start-1">
+        <h3 class="text-lg text-gray-600 font-bold p-1">Get the app</h3>
+        <a class="text-gray-400 " href="#">Tripma for Android</a>
+        <a class="text-gray-400 " href="#">Tripma for iOS</a>
+        <a class="text-gray-400 " href="#">Mobile site</a>
+        <a class="flex justify-center min-[500px]:justify-start" href="#">
+          <img src="../img/appstore.png" alt="">
+        </a>
+        <a class="flex justify-center min-[500px]:justify-start" href="#">
+          <img src="../img/googleplay.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div
+      class="py-4 border-t border-solid border-gray-200 flex flex-col items-center min-[500px]:flex-row justify-between min-[500px]:px-[5%]">
+      <div class="flex gap-5">
+        <i class="fa-brands fa-twitter text-gray-600 text-2xl"></i>
+        <i class="fa-brands fa-instagram text-gray-600 text-2xl"></i>
+        <i class="fa-brands fa-square-facebook text-gray-600 text-2xl"></i>
+      </div>
+      <p class="text-gray-400 text-lg">© 2020 Tripma incorporated</p>
+    </div>
+  </footer>
+</body>
+
+</html>
